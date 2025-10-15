@@ -1,0 +1,8 @@
+/* src/css/shoppingCart.css */
+.checkbox-custom { width: 18px; height: 18px; }
+.product-image img { object-fit: cover; }
+.quantity-btn { padding: 0.25rem 0.6rem; border: 1px solid #e5e7eb; background: white; }
+.quantity-input { outline: none; }
+.shopee-orange { color: #ff5722; background: #ff5722; } /* adjust if you have Tailwind tokens */
+.sticky-checkout { position: sticky; bottom: 0; z-index: 40; }
+.shop-badge { background: #ff7a59; }

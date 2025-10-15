@@ -1,0 +1,81 @@
+.shopee-orange { background-color: #ee4d2d; }
+.shopee-orange-hover:hover { background-color: #d73211; }
+.text-shopee-orange { color: #ee4d2d; }
+.shopee-bg { background-color: #f5f5f5; }
+
+.order-card {
+  transition: all 0.3s ease;
+  border: 1px solid #e5e7eb;
+}
+
+.order-card:hover {
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  border-color: #ee4d2d;
+}
+
+.order-status {
+  padding: 0.25rem 0.75rem;
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.status-pending { background-color: #fef3c7; color: #d97706; }
+.status-confirmed { background-color: #dbeafe; color: #1d4ed8; }
+.status-shipping { background-color: #e0e7ff; color: #5b21b6; }
+.status-delivered { background-color: #d1fae5; color: #059669; }
+.status-cancelled { background-color: #fee2e2; color: #dc2626; }
+.status-returned { background-color: #f3f4f6; color: #6b7280; }
+
+.tab-button { padding: 0.75rem 1.5rem; border-bottom: 2px solid transparent; font-weight: 500; transition: all 0.2s; cursor: pointer; }
+.tab-button:hover { color: #ee4d2d; }
+.tab-button.active { color: #ee4d2d; border-bottom-color: #ee4d2d; }
+
+.search-box { position: relative; }
+.search-box input { padding-left: 2.5rem; }
+.search-icon { position: absolute; left: 0.75rem; top: 50%; transform: translateY(-50%); color: #6b7280; }
+
+.header-notification { position: relative; }
+.header-notification .notification-dot { width: 8px; height: 8px; background-color: #ee4d2d; border-radius: 50%; position: absolute; top: -2px; right: -2px; }
+
+.user-avatar { width: 32px; height: 32px; border-radius: 50%; background: linear-gradient(45deg, #ee4d2d, #ff6b35); display: flex; align-items: center; justify-content: center; color: white; font-weight: 600; font-size: 0.875rem; }
+
+.product-image { width: 80px; height: 80px; border-radius: 0.5rem; object-fit: cover; border: 1px solid #e5e7eb; }
+
+.order-timeline { position: relative; padding-left: 2rem; }
+.order-timeline::before { content: ''; position: absolute; left: 0.5rem; top: 0; bottom: 0; width: 2px; background-color: #e5e7eb; }
+
+.timeline-item { position: relative; padding-bottom: 1.5rem; }
+.timeline-item::before { content: ''; position: absolute; left: -0.375rem; top: 0.25rem; width: 0.75rem; height: 0.75rem; border-radius: 50%; background-color: #e5e7eb; }
+.timeline-item.active::before { background-color: #ee4d2d; }
+.timeline-item.completed::before { background-color: #059669; }
+
+.order-actions { display: flex; gap: 0.5rem; flex-wrap: wrap; }
+
+.action-button { padding: 0.5rem 1rem; border-radius: 0.375rem; font-size: 0.875rem; font-weight: 500; transition: all 0.2s; cursor: pointer; border: 1px solid; }
+.action-primary { background-color: #ee4d2d; color: white; border-color: #ee4d2d; }
+.action-primary:hover { background-color: #d73211; }
+.action-secondary { background-color: white; color: #374151; border-color: #d1d5db; }
+.action-secondary:hover { background-color: #f9fafb; }
+.action-danger { background-color: white; color: #dc2626; border-color: #fca5a5; }
+.action-danger:hover { background-color: #fef2f2; }
+
+.filter-dropdown { position: relative; display: inline-block; }
+.filter-content { display: none; position: absolute; background-color: white; min-width: 200px; box-shadow: 0 8px 16px rgba(0,0,0,0.1); border-radius: 0.5rem; z-index: 1; right: 0; top: 100%; margin-top: 0.5rem; border: 1px solid #e5e7eb; }
+.filter-content.show { display: block; }
+
+.empty-state { text-align: center; padding: 3rem 1rem; color: #6b7280; }
+
+.breadcrumb { display: flex; align-items: center; space-x: 0.5rem; margin-bottom: 1.5rem; }
+.breadcrumb a { color: #6b7280; text-decoration: none; }
+.breadcrumb a:hover { color: #ee4d2d; }
+.breadcrumb .current { color: #ee4d2d; font-weight: 600; }
+
+/* Toasts */
+.toasts-container { position: fixed; top: 1rem; right: 1rem; z-index: 60; display: flex; flex-direction: column; gap: 0.5rem; }
+.toast { padding: 0.5rem 1rem; color: white; border-radius: 0.5rem; box-shadow: 0 6px 18px rgba(0,0,0,0.08); }
+.toast.info { background: #3b82f6; }
+.toast.success { background: #10b981; }
+.toast.error { background: #ef4444; }
+.toast.warning { background: #f59e0b; }

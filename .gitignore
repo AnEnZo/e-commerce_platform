@@ -1,0 +1,16 @@
+# Ignore all application.properties files
+**/application.properties
+**/application*.yml
+**/application*.yaml
+
+# Node/React environment files
+frontend-nextjs/.env
+
+# IDE files
+*.iml
+
+# Build output
+**/target/
+frontend-nextjs/node_modules/
+config.bat
+node_modules
